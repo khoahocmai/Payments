@@ -8,7 +8,6 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
 server.post("/payment", async (req, res) => {
-    //https://developers.momo.vn/#/docs/en/aiov2/?id=payment-method
     //parameters
     var accessKey = process.env.MOMO_ACCESS_KEY;
     var secretKey = process.env.MOMO_SECRET_KEY;
